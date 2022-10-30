@@ -124,7 +124,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <!-- <section class="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__image">
@@ -450,25 +450,31 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input type="text" id="text" name="text" class="contacts__input-text">
+                            <input required type="text" id="text" name="text" class="contacts__input-text">
                             <label for="text">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input type="email" id="email" name="email" class="contacts__input-email">
+                            <input required type="email" id="email" name="email" class="contacts__input-email">
                             <label for="email">Ваше почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="textarea" class="contacts__textarea-area"></textarea>
                             <label for="textarea">Ваше сообщение</label>
                         </div>
-                        <div>
-                            <button class="btn contacts__button">Отправить сообщение</button>
+                        <div class="contacts__button">
+                            <div>
+                                <button class="btn contacts__button-btn">Отправить сообщение</button>
+                            </div>
+                            <div class="contacts__checkbox-text">
+                                <input required type="checkbox" name="checkbox" class="contacts__checkbox">
+                                <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="js/script.js"></script>
 </body>
 </html>
