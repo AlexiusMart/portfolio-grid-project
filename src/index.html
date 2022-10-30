@@ -431,9 +431,40 @@
 
     <div class="contacts">
         <div class="container">
-            <div class="title title_fs16 about__subtitle">Контакты</div>
-            <h2 class="title title_fs36 about__title">Свяжитесь со мной</h2>
-            <div class="devider"></div>
+            <div class="contacts__wrapper">
+                <div class="contacst__photo">
+                    <img src="img/main_photo.jpg" alt="мое фото">
+                </div>
+
+                <div class="contacts__main">
+                    <div class="title title_fs16 contacts__subtitle">Контакты</div>
+                    <h2 class="title title_fs36 contacts__title">Свяжитесь со мной</h2>
+                    <div class="devider"></div>
+                    <div class="title title_fs14 contacts__text-soc">Любым удобным для вас способом:</div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link"><img src="icons/social/facebook.svg" alt="социалка"></a>
+                        <a href="#" class="contacts__link"><img src="icons/social/telegram.svg" alt="социалка"></a>
+                        <a href="#" class="contacts__link"><img src="icons/social/instagram.svg" alt="социалка"></a>
+                    </div>
+                    <div class="title title_fs14 contacts__text-soc">Или оставьте ваши данные и я сама вам напишу:</div>
+
+                    <form action="#" class="contacts__form">
+                        <div class="">
+                            <input type="text" id="text" name="text" class="contacts__input">
+                            <label for="text">Ваше имя</label>
+                        </div>
+                        <div class="">
+                            <input type="email" id="email" name="email" class="contacts__input">
+                            <label for="email">Ваше почта</label>
+                        </div>
+                        <div class="contacts__input">
+                            <textarea name="text" id="textarea" class=""></textarea>
+                            <label for="textarea">Ваше сообщение</label>
+                        </div>
+                        <button class="btn contacts__button">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>
