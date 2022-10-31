@@ -6,6 +6,7 @@
     .container
         max-width: 960px
     .about
+        padding-top: 80px
         &__wrapper
             grid-template-columns: 400px 520px
             gap: 25px 40px
@@ -14,6 +15,24 @@
         &__item
             grid-template-columns: 40px 185px
             column-gap: 10px
+    .resume
+        padding-top: 80px
+        &__wrapper
+                grid-template-columns: repeat(2,365px)
+                column-gap: 100px
+    .skills
+        padding-top: 80px
+        &__wrapper
+            grid-template: repeat(3, 270px) / repeat(3, 270px)
+            justify-content: center
+        &__stat
+            margin-top: 75px
+            grid-template: repeat(2, 70px) / repeat(3, 275px)
+            gap: 25px 30px
+            justify-content: center
+            &-backline
+                width: 275px
+                margin-top: 20px
 
 @media ( max-width: 992px )
     .container
@@ -29,6 +48,22 @@
             grid-template-columns: 350px
         &__item
             grid-template-columns: 40px 300px
+    .resume
+        &__wrapper
+                padding: 45px 5px 0 5px
+                grid-template-columns: repeat(2,345px)
+                column-gap: 20px
+    .skills
+        &__wrapper
+            margin-top: 30px
+            grid-template: repeat(3, 235px) / repeat(3, 235px)
+            gap: 5px
+        &__tech
+            padding: 15px
+        &__stat
+            margin-top: 60px
+            grid-template: repeat(2,70px)/repeat(2,275px)
+            gap: 25px 60px
 
 @media ( max-width: 768px )
     .container
@@ -56,6 +91,22 @@
             grid-template-columns: 40px 220px
         &__image
             grid-row: 1/2
+    .resume
+        &__wrapper
+                padding: 45px 0 0 0
+                grid-template-columns: 540px
+                row-gap: 40px
+    .skills
+        padding-top: 50px
+        &__wrapper
+            grid-template: repeat(2, 250px) / repeat(2, 250px)
+            gap: 10px
+        &__stat
+            margin-top: 60px
+            grid-template: repeat(2,70px)/repeat(2,220px)
+            gap: 25px 60px
+            &-backline
+                width: 220px
 
 @media ( max-width: 576px )
     .container
@@ -68,6 +119,9 @@
     .title
         &_fs36
             font-size: 24px
+        &_section-title
+            line-height: 36px
+            margin-top: 26px
     .about
         &__subtitle
             margin-left: 0px
@@ -84,3 +138,27 @@
             grid-row: 1/2
         &__descr
             margin-top: 46px
+    .resume
+        &__wrapper
+                padding: 40px 0 0 0
+                grid-template-columns: 290px
+                row-gap: 40px
+        .devider
+            margin-top: 15px
+    .skills
+        padding-top: 40px
+        &__wrapper
+            margin-top: 20px
+            grid-template: 270px / 270px
+            row-gap: 20px
+        &__tech
+            padding: 25px
+        .devider
+            margin-top: 15px
+        &__stat
+            margin-top: 60px
+            grid-template: 70px / 290px
+            gap: 40px 0
+            &-backline
+                width: 290px
+                margin-top: 25px
