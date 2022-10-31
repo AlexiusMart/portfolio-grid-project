@@ -5,10 +5,30 @@
 @media ( max-width: 1200px )
     .container
         max-width: 960px
+    .about
+        &__wrapper
+            grid-template-columns: 400px 520px
+            gap: 25px 40px
+        &__items
+            gap: 15px 30px
+        &__item
+            grid-template-columns: 40px 185px
+            column-gap: 10px
 
 @media ( max-width: 992px )
     .container
         max-width: 720px
+    .title_fs36
+        font-size: 29px
+    .about
+        padding-top: 40px
+        &__wrapper
+            grid-template-columns: 350px 350px
+            gap: 20px 25px
+        &__items
+            grid-template-columns: 350px
+        &__item
+            grid-template-columns: 40px 300px
 
 @media ( max-width: 768px )
     .container
@@ -17,12 +37,25 @@
         &_fs48
             font-size: 26px
             line-height: 39px
+        &_fs36
+            font-size: 21px
     .hamburger
         right: 20px
     .promo
         background: url(../img/main_bg.jpg) no-repeat 55%/cover
         &__title
             width: 300px
+    .about
+        &__wrapper
+            grid-template-columns: 260px 260px
+            gap: 10px 20px
+        &__items
+            grid-template-columns: 260px 260px
+            gap: 10px 20px
+        &__item
+            grid-template-columns: 40px 220px
+        &__image
+            grid-row: 1/2
 
 @media ( max-width: 576px )
     .container
@@ -32,3 +65,22 @@
     .menu nav 
         width: 250px
         padding-left: 20px
+    .title
+        &_fs36
+            font-size: 24px
+    .about
+        &__subtitle
+            margin-left: 0px
+        &__wrapper
+            grid-template-columns: 290px
+            gap: 0
+        &__items
+            grid-template-columns: 290px
+            gap: 20px 0
+        &__item
+            grid-template-columns: 40px 200px
+            column-gap: 24px
+        &__image
+            grid-row: 1/2
+        &__descr
+            margin-top: 46px
